@@ -1,0 +1,29 @@
+@mixin main {
+    @include font(16px, 24px); // можно добавлять жирность и др шрифт
+    color: #000000;
+}
+
+@mixin btn {
+    @include font(18px, 24px, 500);
+    color: #ffffff;    
+}
+
+@mixin font($font-size: $font-size, $line-height: $line-height, $font-weight: null, $font-family: $basic-family) {
+    font: $font-weight #{$font-size}/#{$line-height} $font-family;    
+}
+
+@mixin desktop {
+    @media (max-width: $desktop) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (max-width: $tablet) {
+        @content;
+    }
+}
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}

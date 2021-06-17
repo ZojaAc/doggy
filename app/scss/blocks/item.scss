@@ -1,0 +1,7 @@
+.item {
+    border-radius: 8px;     
+
+    @include desktop {
+        display: flex;        
+    }
+}

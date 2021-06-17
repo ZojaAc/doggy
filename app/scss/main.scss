@@ -1,0 +1,11 @@
+@import "variables"; //пишем переменные
+@import "reset"; //сборс стилей
+@import "fonts"; //подключаем шрифты
+@import "mixins";
+@import "blocks/overflow.scss";  //подключаем основные стили сайта(блоки)
+@import "blocks/main-container.scss";
+@import "blocks/item.scss";
+@import "blocks/head.scss";
+@import "blocks/rewards.scss";
+@import "blocks/text.scss";
+@import "blocks/btn.scss";
